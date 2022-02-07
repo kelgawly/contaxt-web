@@ -4,7 +4,7 @@ import {Container} from 'react-bootstrap/';
 const Main = () => (
     <div>
     <MainNavBar />
-    <Container>
+    <Container className="mt-4">
     <Outlet/>
     </Container>
     </div>
