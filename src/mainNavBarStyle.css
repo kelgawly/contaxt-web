@@ -1,0 +1,12 @@
+a {
+    text-decoration: none !important;
+    color: gray !important;
+}
+a:hover {
+    text-decoration: none !important;
+    color:lightgray !important;
+}
+.active{
+    text-decoration: none !important;
+    color:white !important;
+}
