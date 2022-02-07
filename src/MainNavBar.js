@@ -54,6 +54,7 @@ const MainNavBar = () => (
             </Navbar.Brand>
             <Navbar.Collapse className='justify-content-end'>
                 <NavLink className="nav-link" to="/"> Home </NavLink>
+                <NavLink className="nav-link" to="/sensor-data"> Sensor Data </NavLink>
                 <AccountLink />
 
 
