@@ -34,7 +34,7 @@ class AccountLink extends React.Component {
     }
 
     render() {
-        return this.state.user ? <Button onClick={this.logout}>Sign Out</Button> : <Button ><a href="/auth">Sign in</a></Button>;
+        return this.state.user ? <Button onClick={this.logout}>Sign Out</Button> : <Button ><a className='text-white' href="/auth">Sign in</a></Button>;
     }
 };
 
