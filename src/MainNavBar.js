@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar,Nav, Container, Button } from 'react-bootstrap/';
+import { Navbar,Container, Button } from 'react-bootstrap/';
 import { NavLink } from "react-router-dom";
 import './mainNavBarStyle.css';
 import { getAuth } from "firebase/auth";
@@ -57,10 +57,6 @@ const MainNavBar = () => (
                 <NavLink className="nav-link" to="/"> Home </NavLink>
                 <NavLink className="nav-link" to="/sensor-data"> Sensor Data </NavLink>
                 <AccountLink />
-                
-
-
-
             </Navbar.Collapse>
         </Container>
     </Navbar>
