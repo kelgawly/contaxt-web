@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Container, Button } from 'react-bootstrap/';
+import { Navbar,Nav, Container, Button } from 'react-bootstrap/';
 import { NavLink } from "react-router-dom";
 import './mainNavBarStyle.css';
 import { getAuth } from "firebase/auth";
@@ -39,7 +39,7 @@ class AccountLink extends React.Component {
 };
 
 const MainNavBar = () => (
-    <Navbar bg="dark" variant="dark" >
+    <Navbar collapseOnSelect bg="dark" variant="dark" >
         <Container>
             <Navbar.Brand>
                 <NavLink to="/">
@@ -52,10 +52,12 @@ const MainNavBar = () => (
                 </NavLink>
 
             </Navbar.Brand>
-            <Navbar.Collapse className='justify-content-end'>
+            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                
                 <NavLink className="nav-link" to="/"> Home </NavLink>
                 <NavLink className="nav-link" to="/sensor-data"> Sensor Data </NavLink>
                 <AccountLink />
+                
 
 
 

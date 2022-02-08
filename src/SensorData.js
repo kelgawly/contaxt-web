@@ -21,6 +21,7 @@ class SensorData extends React.Component{
                 data.push( doc.data());
                 
             });
+            console.log(data[0]);
             this.setState({data}) ;
         });
           
@@ -30,7 +31,7 @@ class SensorData extends React.Component{
             return (<h1>Sensor Data</h1>);
         } else{
             return(
-                <Table striped bordered hover>
+                <Table responsive striped bordered hover>
                     <thead>
                         <tr>
                             <th>Time Stamp</th>
@@ -48,6 +49,13 @@ class SensorData extends React.Component{
                             this.state.data.map((value, index) => (
                                 <tr key={index}>
                                     <td>{new Date(value.timestamp.seconds * 1000).toLocaleString()}</td>
+                                    <td>{value.fsrResistance}</td>
+                                    <td>{value.gps.longitude}</td>
+                                    <td>{value.gps.latitude}</td>
+                                    <td>{value.gps.altitude}</td>
+                                    <td>{value.accelerometer.x}</td>
+                                    <td>{value.accelerometer.y}</td>
+                                    <td>{value.accelerometer.z}</td>
                                 </tr>
                             ))
                         }
